@@ -1,4 +1,4 @@
-angular.module('starter.controllers', [])
+angular.module('uwoMobileApp.controllers', [])
 
 .controller('AppCtrl', function($scope) {
 })
@@ -23,7 +23,7 @@ angular.module('starter.controllers', [])
 .controller('QuicklinkCtrl', function($scope, $stateParams) {
 });
 
-angular.module('starter')
+angular.module('uwoMobileApp')
   .filter('characters', function () {
     return function (input, chars, breakOnWord) {
       if (isNaN(chars)) {
