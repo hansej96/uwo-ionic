@@ -99,6 +99,15 @@ angular.module('uwoMobileApp', ['ionic', 'uwoMobileApp.controllers'])
       }
     })
 
+    .state('app.campusServicesPolk', {
+      url: "/campus-services/polk",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/campus-services/polk-library.html"
+        }
+      }
+    })
+
     .state('app.emergency', {
       url: "/emergency",
       views: {
