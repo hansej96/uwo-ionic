@@ -25,11 +25,29 @@ angular.module('uwoMobileApp', ['ionic', 'uwoMobileApp.controllers'])
       controller: 'AppCtrl'
     })
 
+    .state('app.home', {
+      url: "/home",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/home.html"
+        }
+      }
+    })
+
     .state('app.newsAndEvents', {
       url: "/news-and-events",
       views: {
         'menuContent' :{
-          templateUrl: "templates/news-and-events.html",
+          templateUrl: "templates/news-and-events.html"
+        }
+      }
+    })
+
+    .state('app.newsAndEventsUWOT', {
+      url: "/news-and-events/uwot",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/news-and-events/uwot.html",
           controller: 'CampusNewsPanelCtrl'
         }
       }
@@ -90,5 +108,5 @@ angular.module('uwoMobileApp', ['ionic', 'uwoMobileApp.controllers'])
       }
     });
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/news-and-events');
+  $urlRouterProvider.otherwise('/app/home');
 });
