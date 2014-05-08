@@ -25,43 +25,69 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       controller: 'AppCtrl'
     })
 
-    .state('app.search', {
-      url: "/search",
+    .state('app.newsAndEvents', {
+      url: "/news-and-events",
       views: {
         'menuContent' :{
-          templateUrl: "templates/search.html"
+          templateUrl: "templates/news-and-events.html"
         }
       }
     })
 
-    .state('app.browse', {
-      url: "/browse",
+    .state('app.peopleAndPlaces', {
+      url: "/people-and-places",
       views: {
         'menuContent' :{
-          templateUrl: "templates/browse.html"
+          templateUrl: "templates/people-and-places.html"
         }
       }
     })
-    .state('app.playlists', {
-      url: "/playlists",
+    .state('app.quicklinks', {
+      url: "/quicklinks",
       views: {
         'menuContent' :{
-          templateUrl: "templates/playlists.html",
-          controller: 'PlaylistsCtrl'
+          templateUrl: "templates/quicklinks.html",
+          controller: 'QuicklinksCtrl'
         }
       }
     })
 
-    .state('app.single', {
-      url: "/playlists/:playlistId",
+    .state('app.quicklink', {
+      url: "/quicklinks/:quicklinkId",
       views: {
         'menuContent' :{
-          templateUrl: "templates/playlist.html",
-          controller: 'PlaylistCtrl'
+          templateUrl: "templates/quicklink.html",
+          controller: 'QuicklinkCtrl'
+        }
+      }
+    })
+
+    .state('app.stayConnected', {
+      url: "/stay-connected",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/stay-connected.html"
+        }
+      }
+    })
+
+    .state('app.campusServices', {
+      url: "/campus-services",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/campus-services.html"
+        }
+      }
+    })
+
+    .state('app.emergency', {
+      url: "/emergency",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/emergency.html"
         }
       }
     });
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/playlists');
+  $urlRouterProvider.otherwise('/app/news-and-events');
 });
-
