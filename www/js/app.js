@@ -29,7 +29,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       url: "/news-and-events",
       views: {
         'menuContent' :{
-          templateUrl: "templates/news-and-events.html"
+          templateUrl: "templates/news-and-events.html",
+          controller: 'CampusNewsPanelCtrl'
         }
       }
     })
