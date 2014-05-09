@@ -53,6 +53,16 @@ angular.module('uwoMobileApp', ['ionic', 'uwoMobileApp.controllers'])
       }
     })
 
+    .state('app.newsAndEventsAdvanceTitan', {
+      url: "/news-and-events/advance-titan",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/news-and-events/advance-titan.html",
+          controller: 'AdvanceTitanCtrl'
+        }
+      }
+    })
+
     .state('app.peopleAndPlaces', {
       url: "/people-and-places",
       views: {
