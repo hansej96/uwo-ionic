@@ -53,6 +53,16 @@ angular.module('uwoMobileApp', ['ionic', 'uwoMobileApp.controllers'])
       }
     })
 
+    .state('app.newsAndEventsEvents', {
+      url: "/news-and-events/events",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/news-and-events/events.html",
+          controller: 'EventsCtrl'
+        }
+      }
+    })
+
     .state('app.newsAndEventsAdvanceTitan', {
       url: "/news-and-events/advance-titan",
       views: {
@@ -96,6 +106,15 @@ angular.module('uwoMobileApp', ['ionic', 'uwoMobileApp.controllers'])
       views: {
         'menuContent' :{
           templateUrl: "templates/stay-connected.html"
+        }
+      }
+    })
+
+    .state('app.stayConnectedTwitterAccounts', {
+      url: "/stay-connected/twitter-accounts",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/stay-connected/twitter-accounts.html"
         }
       }
     })
