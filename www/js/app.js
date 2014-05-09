@@ -119,6 +119,15 @@ angular.module('uwoMobileApp', ['ionic', 'uwoMobileApp.controllers'])
       }
     })
 
+    .state('app.stayConnectedFacebookAccounts', {
+      url: "/stay-connected/facebook-accounts",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/stay-connected/facebook-accounts.html"
+        }
+      }
+    })
+
     .state('app.campusServices', {
       url: "/campus-services",
       views: {
