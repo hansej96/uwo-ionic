@@ -73,6 +73,24 @@ angular.module('uwoMobileApp', ['ionic', 'uwoMobileApp.controllers'])
       }
     })
 
+    .state('app.newsAndEventsOdyssey', {
+      url: "/news-and-events/odyssey",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/odysseyMenu.html"
+        }
+      }
+    })
+
+    .state('app.odysseySchedule', {
+      url: "/templates/odysseyMenu",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/Odyssey/odyssey-schedule.html"
+        }
+      }
+    })
+
     .state('app.peopleAndPlaces', {
       url: "/people-and-places",
       views: {
